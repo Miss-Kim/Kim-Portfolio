@@ -1,0 +1,253 @@
+/*Global rest*/
+/*BG color: #fff;
+line/bolck buttom color: #f7f3f5;
+navi color:#687477;
+p color:#403224;
+
+
+font-family: 'El Messiri', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  /* grid-template-columns: 1fr auto; */
+  /* padding: 3rem; */
+  margin: 6rem;
+  margin-bottom: 0;
+  grid-gap: 0.1em;
+  grid-template-areas: "header" "nav" "main" "footer";
+  background-color: #feeeee;
+}
+
+#header {
+  font-size: 16px;
+
+  background-color: #feeeee;
+  grid-area: header;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/*The Hero Image*/
+
+.header-image {
+  background-color: seashell;
+  width: 25em;
+  margin-left: 10em;
+  grid-column: 1;
+
+  /* min-height: 250px; */
+  /* height: auto; */
+
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.hero-text {
+  background-color: #feeeee;
+  text-align: center;
+  margin-right: 15em;
+  grid-column: 2;
+  margin-block: auto;
+}
+.hero-text-1 {
+  font-family: "El Messiri", sans-serif;
+  color: #246d5c;
+  font-size: 30px;
+}
+.hero-text-2 {
+  font-family: "El Messiri", sans-serif;
+  color: #02173b;
+  font-size: 15px;
+}
+
+nav {
+  font-family: "Montserrat", sans-serif;
+
+  text-align: center;
+  background-color: #feeeee;
+  grid-area: nav;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  border-bottom: 1.5px dotted #403224;
+  border-top: 1.5px dotted #403224;
+}
+
+nav a {
+  color: #246d5c;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "El Messiri", sans-serif;
+  padding: 0.1rem;
+}
+
+main {
+  grid-area: main;
+  /* padding-right: 40px; */
+}
+
+h1 {
+  color: #246d5c;
+  font-size: 30px;
+  font-family: "El Messiri", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "El Messiri", sans-serif;
+  text-align: center;
+
+  padding-top: 15px;
+}
+h2,
+h3,
+h4 {
+  color: #0e2644;
+}
+p {
+  color: #0e2644;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #0e2644;
+  margin: 10px 10px;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  border-collapse: separate;
+  border-spacing: 266px 2px;
+}
+
+table,
+th,
+td {
+  font-family: "Montserrat", sans-serif;
+  border: none;
+}
+
+/*classes*/
+.about-p {
+  line-height: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button {
+  border: none;
+  border-radius: 50px;
+
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: crosshair;
+}
+
+.button1 {
+  background-color: #02173b;
+  color: #f7f3f5;
+}
+
+.button2 {
+  background-color: #246d5c;
+  font-family: "El Messiri", sans-serif;
+  color: #f7f3f5;
+}
+
+.text-1 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.related-1 {
+  font-size: 25px;
+  list-style: none;
+}
+.related-skill {
+  list-style: none;
+}
+
+/*IDs styling*/
+
+#About {
+  background: #feeeee;
+  border-bottom: 1px solid #403224;
+}
+#Education {
+  background: #feeeee;
+  border-bottom: 1px solid #403224;
+}
+#Skills {
+  background: #feeeee;
+  border-bottom: 1px solid #403224;
+  padding-bottom: 20px;
+}
+
+#Contact {
+  background: #feeeee;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+#Copyright {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 10px;
+}
+/*Style Links with sudoclass*/
+a:link {
+  color: #246d5c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #596687;
+  font-weight: italic;
+}
+
+a:active {
+  color: #7c6256;
+  font-style: italic;
+}
+
+footer {
+  grid-area: footer;
+
+  margin-top: 10px;
+  border-bottom: 2px dotted #403224;
+  border-top: 2px dotted #403224;
+}
+
+/* Small devices (640px and smaller) */
